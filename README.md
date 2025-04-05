@@ -8,8 +8,6 @@ The goal is to evaluate how each algorithm identifies natural groupings of point
 
 - Clustering of real-world geospatial data (latitude & longitude) in Kraków.
 - Visual comparison of DBSCAN and HDBSCAN cluster outputs.
-- Evaluation of clustering performance, including handling of outliers.
-- Interactive mapping for intuitive understanding of results (e.g., using Folium or Plotly).
 
 ## 🧪 Algorithms Used
 
