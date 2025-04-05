@@ -1,69 +1,21 @@
+# 🧠 Clustering Analysis in Kraków: DBSCAN vs. HDBSCAN
 
-# DBSCAN vs HDBSCAN – Clustering Comparison
+This project explores the performance and behavior of two popular density-based clustering algorithms — **DBSCAN** and **HDBSCAN** — on geospatial point data located in **Kraków, Poland**.
 
-This project demonstrates and compares the performance of **DBSCAN** and **HDBSCAN** on synthetic datasets using Python and visualizations.
+The goal is to evaluate how each algorithm identifies natural groupings of points based on density and spatial distribution. By applying both methods to real-world coordinates from Kraków, we compare their clustering outcomes, robustness to noise, and sensitivity to parameters.
 
-## 🧠 Overview
+## ✨ Key Features
 
-Both DBSCAN and HDBSCAN are density-based clustering algorithms. This notebook showcases how each algorithm performs, particularly in terms of cluster detection, noise recognition, and adaptability to varying densities.
+- Clustering of real-world geospatial data (latitude & longitude) in Kraków.
+- Visual comparison of DBSCAN and HDBSCAN cluster outputs.
+- Evaluation of clustering performance, including handling of outliers.
+- Interactive mapping for intuitive understanding of results (e.g., using Folium or Plotly).
 
-## 📊 Comparison Table
+## 🧪 Algorithms Used
 
-| Feature | DBSCAN | HDBSCAN |
-|--------|--------|---------|
-| **Parameters** | `eps`, `min_samples` | `min_cluster_size`, `min_samples` (optional) |
-| **Cluster Detection** | Flat | Hierarchical |
-| **Density Adaptation** | Fixed | Variable |
-| **Noise Handling** | Moderate | Excellent |
-| **Performance on Varying Densities** | Weak | Strong |
-| **Speed** | Faster on small datasets | Slightly slower |
-| **Result Stability** | Sensitive to parameters | More robust due to hierarchy |
+- **DBSCAN** (Density-Based Spatial Clustering of Applications with Noise)
+- **HDBSCAN** (Hierarchical DBSCAN — more flexible and often better for varying densities)
 
-## 📸 Visual Examples
+## 🗺️ Why Kraków?
 
-Below are screenshots from the notebook showcasing the clustering results of each algorithm:
-
-### DBSCAN Clustering
-![DBSCAN Example](images/dbscan_result.png)
-
-### HDBSCAN Clustering
-![HDBSCAN Example](images/hdbscan_result.png)
-
-> 📎 *Ensure you have the images saved in a folder named `images/` within your project directory for them to display properly.*
-
-## 📦 Dependencies
-
-- Python 3.x
-- `scikit-learn`
-- `hdbscan`
-- `matplotlib`
-- `numpy`
-
-Install the required packages using:
-
-```bash
-pip install -r requirements.txt
-```
-
-## 🚀 Running the Project
-
-To view the analysis, open the `.html` file in your browser or run the original Jupyter Notebook:
-
-```bash
-jupyter notebook dbscan_hdbscan_comparison.ipynb
-```
-
-## 📁 Files Included
-
-- `dbscan_hdbscan_comparison.html` – HTML export of the notebook
-- `README.md` – This file
-- (Optional) `images/` – Folder with screenshot plots
-
-## 📌 Notes
-
-- HDBSCAN is generally more robust for real-world noisy datasets.
-- DBSCAN can be faster and simpler but may require more careful parameter tuning.
-
----
-
-© 2025 – Your Name
+Kraków offers a rich and varied urban structure with distinct zones — from the historical Old Town to modern suburbs — making it a compelling area to test spatial clustering methods on real data.
